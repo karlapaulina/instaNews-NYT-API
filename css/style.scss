@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Open Sans Bold Italic';
+    src: url('/assets/fonts/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/OpenSans-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/OpenSans-BoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/OpenSans-BoldItalic.svg#OpenSans-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('/assets/fonts/OpenSans-Bold.woff') format('woff'),
+        url('/assets/fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('/assets/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('/assets/fonts/OpenSans-Light.woff2') format('woff2'),
+        url('/assets/fonts/OpenSans-Light.woff') format('woff'),
+        url('/assets/fonts/OpenSans-Light.ttf') format('truetype'),
+        url('/assets/fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light Italic';
+    src: url('/assets/fonts/OpenSansLight-Italic.woff2') format('woff2'),
+        url('/assets/fonts/OpenSansLight-Italic.woff') format('woff'),
+        url('/assets/fonts/OpenSansLight-Italic.ttf') format('truetype'),
+        url('/assets/fonts/OpenSansLight-Italic.svg#OpenSansLight-Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* STYLES */
+
+$font-stack: 'Open Sans Light', sans-serif;
+$primary-color: #FFF;
+$primary-font-size: 16px;
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 50% 25%;
+    justify-items: center;
+    font-family: $font-stack;
+    font-size: $primary-font-size;
+    color: $primary-color;
+    background-color: #000;
+}
+
+header {
+    margin-top: 20%;
+    max-height: 75%;
+}
+
+.categories-menu {
+    text-align: center;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(12, 1fr);
+    margin-bottom: 20%;
+}
+
+
+footer {
+    color: #c2c2c2;
+}
