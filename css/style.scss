@@ -47,7 +47,6 @@ $primary-font-size: 16px;
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 50% 25%;
     justify-items: center;
     font-family: $font-stack;
     font-size: $primary-font-size;
@@ -56,8 +55,7 @@ $primary-font-size: 16px;
 }
 
 header {
-    margin-top: 20%;
-    max-height: 75%;
+    margin-top: 50%;
 }
 
 .categories-menu {
@@ -68,9 +66,8 @@ header {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(12, 1fr);
-    margin-bottom: 20%;
+    margin-bottom: 25%;
 }
-
 
 footer {
     color: #c2c2c2;

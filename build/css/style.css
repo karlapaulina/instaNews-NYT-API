@@ -1,27 +1,27 @@
 @font-face {
-  font-family: "Open Sans Bold Italic";
+  font-family: 'Open Sans Bold Italic';
   src: url("/assets/fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("/assets/fonts/OpenSans-BoldItalic.woff") format("woff"), url("/assets/fonts/OpenSans-BoldItalic.ttf") format("truetype"), url("/assets/fonts/OpenSans-BoldItalic.svg#OpenSans-BoldItalic") format("svg");
   font-weight: bold;
-  font-style: italic;
-}
+  font-style: italic; }
+
 @font-face {
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
   src: url("/assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("/assets/fonts/OpenSans-Bold.woff") format("woff"), url("/assets/fonts/OpenSans-Bold.ttf") format("truetype"), url("/assets/fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   font-weight: bold;
-  font-style: normal;
-}
+  font-style: normal; }
+
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: 'Open Sans Light';
   src: url("/assets/fonts/OpenSans-Light.woff2") format("woff2"), url("/assets/fonts/OpenSans-Light.woff") format("woff"), url("/assets/fonts/OpenSans-Light.ttf") format("truetype"), url("/assets/fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
   font-weight: 300;
-  font-style: normal;
-}
+  font-style: normal; }
+
 @font-face {
-  font-family: "Open Sans Light Italic";
+  font-family: 'Open Sans Light Italic';
   src: url("/assets/fonts/OpenSansLight-Italic.woff2") format("woff2"), url("/assets/fonts/OpenSansLight-Italic.woff") format("woff"), url("/assets/fonts/OpenSansLight-Italic.ttf") format("truetype"), url("/assets/fonts/OpenSansLight-Italic.svg#OpenSansLight-Italic") format("svg");
   font-weight: 300;
-  font-style: italic;
-}
+  font-style: italic; }
+
 /* STYLES */
 .container {
   display: grid;
@@ -30,26 +30,19 @@
   font-family: "Open Sans Light", sans-serif;
   font-size: 16px;
   color: #FFF;
-  background-color: #000;
-}
+  background-color: #000; }
 
 header {
-  margin-top: 50%;
-}
+  margin-top: 50%; }
 
 .categories-menu {
-  text-align: center;
-}
+  text-align: center; }
 
 .articles {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(12, 1fr);
-  margin-bottom: 25%;
-}
+  margin-bottom: 25%; }
 
 footer {
-  color: #c2c2c2;
-}
-
-/*# sourceMappingURL=style.css.map */
+  color: #c2c2c2; }

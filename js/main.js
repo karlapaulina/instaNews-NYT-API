@@ -7,7 +7,7 @@ $("select").on("change", function () {
         })
         .done(function (data) {
             const description = data.results[0].abstract
-            console.log(data)
+            console.log(description)
 
             const articleImage = data.results[0].multimedia[3].url
             console.log(articleImage)
@@ -15,12 +15,11 @@ $("select").on("change", function () {
             const articleLink = data.results[0].url
             console.log(articleLink)
 
-            for (data)
+           // for (data)
 
         })
-        .fail(function () {
+       .fail(function () {
             $('.repo-list').append('<li>' + 'NOPE' + '</li>');
         })
-
 
 })
