@@ -58,6 +58,16 @@ header {
     margin-top: 50%;
 }
 
+.logo {
+    width: auto;
+    height: auto;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
 .categories-menu {
     text-align: center;
 }
@@ -65,8 +75,14 @@ header {
 .articles{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(12, 1fr);
+    place-items: center;
     margin-bottom: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    background-color: rgba($color: #000000, $alpha: 0.5);
 }
 
 footer {

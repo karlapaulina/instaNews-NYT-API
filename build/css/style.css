@@ -35,14 +35,27 @@
 header {
   margin-top: 50%; }
 
+.logo {
+  width: auto;
+  height: auto; }
+
+.logo img {
+  width: auto;
+  height: auto; }
+
 .categories-menu {
   text-align: center; }
 
 .articles {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(12, 1fr);
+  place-items: center;
   margin-bottom: 25%; }
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 footer {
   color: #c2c2c2; }
