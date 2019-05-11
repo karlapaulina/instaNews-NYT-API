@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 $("select").on("change", function () {
     let section = $('select option:selected').val();
     $('.loading').append('LOADING');
@@ -6,20 +8,18 @@ $("select").on("change", function () {
             $('.loading').append('success')
         })
         .done(function (data) {
-            const description = data.results[0].abstract
-            console.log(description)
+            $(".articles").html(" ");
+             for(x = 0; x < 12; x++){
+                const description = data.results[x].abstract
+                const articleImage = data.results[x].multimedia[3].url
+                const articleLink = data.results[x].url
+              
+                $(".articles").append(`<article><a href="${articleLink}"><p>${description}</p><img src="${articleImage}"/></a<></article>`)
+    
+             }
 
-            const articleImage = data.results[0].multimedia[3].url
-            console.log(articleImage)
-
-            const articleLink = data.results[0].url
-            console.log(articleLink)
-
-           // for (data)
-
-        })
-       .fail(function () {
-            $('.repo-list').append('<li>' + 'NOPE' + '</li>');
         })
 
 })
+
+});
