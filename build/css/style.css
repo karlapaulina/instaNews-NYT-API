@@ -1,26 +1,8 @@
 @font-face {
-  font-family: 'Open Sans Bold Italic';
-  src: url("../../assets/fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/OpenSans-BoldItalic.woff") format("woff"), url("../../assets/fonts/OpenSans-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/OpenSans-BoldItalic.svg#OpenSans-BoldItalic") format("svg");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Open Sans Bold';
-  src: url("../../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../../assets/fonts/OpenSans-Bold.woff") format("woff"), url("../../assets/fonts/OpenSans-Bold.ttf") format("truetype"), url("../../assets/fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
   font-family: 'Open Sans Light';
   src: url("../../assets/fonts/OpenSans-Light.woff2") format("woff2"), url("../../assets/fonts/OpenSans-Light.woff") format("woff"), url("../../assets/fonts/OpenSans-Light.ttf") format("truetype"), url("../../assets/fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Open Sans Light Italic';
-  src: url("../../assets/fonts/OpenSansLight-Italic.woff2") format("woff2"), url("../../assets/fonts/OpenSansLight-Italic.woff") format("woff"), url("../../assets/fonts/OpenSansLight-Italic.ttf") format("truetype"), url("../../assets/fonts/OpenSansLight-Italic.svg#OpenSansLight-Italic") format("svg");
-  font-weight: 300;
-  font-style: italic; }
 
 /* STYLES */
 .container {
@@ -33,18 +15,25 @@
   background-color: #000; }
 
 header {
+  display: grid;
+  grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50%; }
 
 .logo {
+  text-align: center;
   width: auto;
   height: auto; }
 
 .logo img {
-  width: auto;
-  height: auto; }
+  width: 200px;
+  height: 200px; }
 
 .categories-menu {
-  text-align: center; }
+  text-align: center;
+  max-width: 200px; }
 
 .articles {
   display: grid;
@@ -57,5 +46,99 @@ a {
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.5); }
 
+.loading-gif img {
+  max-height: 200px;
+  max-width: 200px; }
+
 footer {
   color: #c2c2c2; }
+
+@media all and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    width: auto;
+    justify-items: center;
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #000; }
+  header {
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    margin-top: 25%; }
+  .logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: auto;
+    height: auto; }
+  .categories-menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    max-width: 200px; }
+  .articles {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: repeat(3, 33%);
+    place-items: center;
+    margin-bottom: 25%; }
+  .loading-gif {
+    grid-column-start: 2;
+    grid-column-end: 3; }
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: #c2c2c2; } }
+
+@media all and (min-width: 1240px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: auto;
+    justify-items: center;
+    font-family: "Open Sans Light", sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #000; }
+  header {
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    margin-top: 40%; }
+  .logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: auto;
+    height: auto; }
+  .categories-menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    max-width: 200px; }
+  .articles {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-template-columns: repeat(4, 25%);
+    place-items: center;
+    margin-bottom: 25%; }
+  .loading-gif {
+    grid-column-start: 2;
+    grid-column-end: 4; }
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: #c2c2c2; } }

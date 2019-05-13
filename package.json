@@ -25,5 +25,8 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-terser": "^1.1.7"
+  },
+  "dependencies": {
+    "node-pre-gyp": "^0.13.0"
   }
 }

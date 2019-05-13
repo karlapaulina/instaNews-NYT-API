@@ -9,3 +9,7 @@ Javascript
 jQuery
 
 Personal learnings: 
+
+Working with jquery functions, for loops, ajax, and if statements was challenging at the start, but working through the logic and writing them from scratch is more intuative now. 
+
+Styling with SASS was great and certainly makes more sense work-flow wise. 
