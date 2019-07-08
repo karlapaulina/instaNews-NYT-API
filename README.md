@@ -1,15 +1,24 @@
-# Project-03
+# InstaNews NYT API Website
 
-This is a one-page, responsive website that allows a user to filter top news story categories via NYT API.
+This is a one-page, responsive website that allows a user to filter through top news story categories via the NYT API.
 
-Languages used: 
-HTML5
-CSS3
-Javascript
-jQuery
+![Image](assets/images/instanews-screenshot.png)
 
-Personal learnings: 
+## Built With
 
-Working with jquery functions, for loops, ajax, and if statements was challenging at the start, but working through the logic and writing them from scratch is more intuative now. 
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
-Styling with SASS was great and certainly makes more sense work-flow wise. 
+* [CSS3](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
+
+* [jQuery](https://jquery.com/)
+
+
+## Personal learnings
+
+* First time working with AJAX and JSON
+* First time working with SASS for CSS styling
+* This project reinforced knowledge in HTML5, CSS3, jQuery, and also helped me style more proficently with the introduction of SASS.
+
+## Authors
+
+* [Karla Gonzalez](https://github.com/karlapaulina)

@@ -11,7 +11,6 @@ $(document).ready(function () {
                 $('header').animate({ marginTop: '40px', marginBottom: '40px' });
                 $('.articles').animate({ marginBottom: '5%' });
                 $('.loading-gif').append(`<img src='../assets/images/ajax-loader.gif'/>`)
-                $(".logo img").animate({width: "125px", height: "125px"});
             }
         })
             .done(function (data) {
@@ -42,7 +41,7 @@ $(document).ready(function () {
                 }, 2000);
             })
             .fail(function () {
-                $('.loading-gif').append(`<h2>There was an error loading the page.</h2>`);
+                $('.loading-gif').append('<h2>There was an error loading the page.</h2>');
             });
 
     })
